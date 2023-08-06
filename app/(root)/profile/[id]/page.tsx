@@ -20,11 +20,12 @@ const Page = async ({ params }: { params: { id: string }}) => {
     <section>
       <ProfileHeader
         accountId={userInfo.id}
-        authUserId={userInfo.id}
+        authUserId={user.id}
         name={userInfo.name}
         username={userInfo.username}
         imgUrl={userInfo.image}
         bio={userInfo.bio}
+        type='Community'
       />
 
       <div className='mt-9'>
